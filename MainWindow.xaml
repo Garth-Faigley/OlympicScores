@@ -1,0 +1,26 @@
+﻿<Window x:Class="OlympicScores.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:os="clr-namespace:OlympicScores"
+        xmlns:local="clr-namespace:OlympicScores"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="1200">
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Viewbox>
+            <TextBlock Foreground="#ccff00" FontWeight="Bold" Margin="1,0" Name="TextBlockEventTitle"></TextBlock>
+        </Viewbox>
+        <Grid Grid.Row="1" >
+            <Canvas ClipToBounds="True" Name="CanvasMarquee" >
+                <TextBlock Foreground="#ccff00" Name="TextBlockMarquee" FontSize="96" 
+                           Margin="50">
+                </TextBlock>
+            </Canvas>
+        </Grid>
+    </Grid>
+</Window>
